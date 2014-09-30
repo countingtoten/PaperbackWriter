@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core
+namespace Core.Models
 {
-    public class Class1
+    public class Book
     {
+        public String Title { get; set; }
     }
 }
