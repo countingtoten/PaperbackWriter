@@ -9,11 +9,31 @@ namespace UI.Controllers
 {
     public class BooksController : Controller
     {
-        //
-        // GET: /Books/
+        [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            var vm = new List<Book>();
+            return View(vm);
+        }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+            var vm = new Book();
+            return View(vm);
+        }
+
+        [HttpPost]
+        public ActionResult Create(Book book)
+        {
+            return View(book);
+        }
+
+        [HttpGet]
+        public ActionResult Show()
+        {
+            var vm = new Book();
+            return View(vm);
         }
     }
 }
