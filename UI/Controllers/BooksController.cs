@@ -19,7 +19,10 @@ namespace UI.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            var vm = new Book();
+            var vm = new Book()
+            {
+                Title = "Book!"
+            };
             return View(vm);
         }
 

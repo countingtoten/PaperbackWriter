@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
+    <script src="~/Scripts/require.js"></script>
+    <script src="~/Scripts/common.js"></script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -30,5 +32,6 @@
             <p>&copy; @DateTime.Now.Year - Paperback Writer</p>
         </footer>
     </div>
+    @RenderSection("scripts", required: false)
 </body>
 </html>
